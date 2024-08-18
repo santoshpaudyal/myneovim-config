@@ -1,0 +1,38 @@
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    tag = "v0.9.1",
+    opts = {
+      ensure_installed = {
+        "html",
+        "javascript",
+        "typescript",
+        "css",
+        "gitignore",
+        "graphql",
+        "http",
+        "json",
+        "scss",
+        "sql",
+        "markdown",
+        "python",
+        "query",
+        "tsx",
+        "yaml",
+        "vim",
+        "lua",
+        "black",
+        "mypy",
+        "pylint",
+        "isort",
+        "flake8",
+        "debugpy",
+      },
+      query_linter = {
+        enable = true,
+        use_virtual_text = true,
+        lint_events = { "BufWrite", "CursorHold" },
+      },
+    },
+  },
+}
